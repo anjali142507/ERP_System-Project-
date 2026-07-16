@@ -1,0 +1,10 @@
+.idea/
+*.iml
+
+erp-frontend/node_modules/
+erp-frontend/dist/
+
+erp-system-backend/target/
+
+.env
+*.log
