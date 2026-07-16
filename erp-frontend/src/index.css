@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* Global font: Poppins everywhere except icons and ledger numbers */
+*:not(.MuiSvgIcon-root):not(.material-icons):not(svg):not(path):not(.ledger-figure) {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Icons stay on their icon font, not Poppins */
+.MuiSvgIcon-root,
+.material-icons,
+svg,
+path {
+  font-family: inherit;
+}
+
+/* Keep prices/SKU/stock numbers in mono, per the ledger-figure design */
+.ledger-figure {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+}
