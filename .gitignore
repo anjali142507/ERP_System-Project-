@@ -8,3 +8,5 @@ erp-system-backend/target/
 
 .env
 *.log
+
+erp-system-backend/uploads/
