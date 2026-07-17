@@ -24,10 +24,13 @@ public class SecurityConfig {
                 .cors(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-
-                        .requestMatchers("/api/**").permitAll()
-                        .requestMatchers("/uploads/**").permitAll()
-                        .anyRequest().authenticated()
+                        .requestMatchers(
+                                "/api/**",
+                                "/uploads/**",
+                                "/swagger-ui/**",
+                                "/v3/api-docs/**"
+                        ).permitAll()
+                        .anyRequest().permitAll()
                 );
         return http.build();
     }
