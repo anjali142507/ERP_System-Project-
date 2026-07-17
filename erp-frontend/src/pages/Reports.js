@@ -30,7 +30,9 @@ function Reports() {
   useEffect(() => {
     const fetchAnalytics = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/reports/summary");
+        const response = await axios.get(
+  "https://erpsystem-project-production.up.railway.app/api/reports/summary"
+);
         if (response.data) {
           setReportData(prev => ({
             ...prev,
