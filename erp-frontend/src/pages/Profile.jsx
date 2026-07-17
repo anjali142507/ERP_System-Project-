@@ -16,14 +16,14 @@ function Profile() {
 
   useEffect(() => {
     if (loggedInUser?.id) {
-      fetch(`http://localhost:8080/api/profile/${loggedInUser.id}`)
+     fetch(`https://erpsystem-project-production.up.railway.app/api/profile/${loggedInUser.id}`)
         .then(res => res.json())
         .then(data => {
           setUser(data);
 
           if (data.profileImage) {
             setImageUrl(
-              `http://localhost:8080/uploads/${data.profileImage}`
+           `https://erpsystem-project-production.up.railway.app/uploads/${data.profileImage}`
             );
           }
         })
@@ -44,7 +44,7 @@ function Profile() {
     try {
 
       const response = await axios.post(
-        `http://localhost:8080/api/profile/upload/${loggedInUser.id}`,
+       `https://erpsystem-project-production.up.railway.app/api/profile/upload/${loggedInUser.id}`,
         formData,
         {
           headers: {
@@ -53,7 +53,7 @@ function Profile() {
         }
       );
       setImageUrl(
-        `http://localhost:8080/uploads/${response.data.profileImage}`
+       `https://erpsystem-project-production.up.railway.app/uploads/${response.data.profileImage}`
 
       );
       alert("Profile Photo Uploaded Successfully");

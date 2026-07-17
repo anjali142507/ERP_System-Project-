@@ -26,12 +26,12 @@ function Navbar({ handleDrawerToggle }) {
   const [profileImage, setProfileImage] = useState("");
   useEffect(() => {
     if (user?.id) {
-      fetch(`http://localhost:8080/api/profile/${user.id}`)
+     fetch(`https://erpsystem-project-production.up.railway.app/api/profile/${user.id}`)
         .then(res => res.json())
         .then(data => {
           if (data.profileImage) {
             setProfileImage(
-              `http://localhost:8080/uploads/${data.profileImage}`
+              `https://erpsystem-project-production.up.railway.app/uploads/${data.profileImage}`
             );
           }
         })
