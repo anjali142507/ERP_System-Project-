@@ -43,7 +43,27 @@ Manage customers, suppliers, inventory, purchase orders, sales, invoicing, and r
 
 <div align="center">
 
-*Screenshots coming soon — see the [Live Demo](https://erp-system-project-eight.vercel.app) in the meantime.*
+**Landing Page**
+
+<img src="screenshots/landing.png" width="800" alt="Landing page" />
+
+<br/><br/>
+
+**Dashboard**
+
+<img src="screenshots/dashboard.png" width="800" alt="ERP dashboard with stats and workspace shortcuts" />
+
+<br/><br/>
+
+**Products** &nbsp;&nbsp;|&nbsp;&nbsp; **Invoices**
+
+<img src="screenshots/products.png" width="480" alt="Product inventory table" /> <img src="screenshots/invoices.png" width="480" alt="Invoices list with expanded detail" />
+
+<br/><br/>
+
+**Reports & Analytics** &nbsp;&nbsp;|&nbsp;&nbsp; **Profile**
+
+<img src="screenshots/reports.png" width="480" alt="Reports and analytics with performance chart" /> <img src="screenshots/profile.png" width="270" alt="User profile page" />
 
 </div>
 
