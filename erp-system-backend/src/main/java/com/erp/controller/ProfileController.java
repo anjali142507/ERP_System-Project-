@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 
 @RestController
 @RequestMapping("/api/profile")
-@CrossOrigin(origins = "http://localhost:3000")
+
 public class ProfileController {
 
     @Autowired

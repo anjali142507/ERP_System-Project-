@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/dashboard")
-@CrossOrigin(origins = "http://localhost:3000") // 👈 Ye line login aur stats dono ke liye zaroori hai
+
 public class DashboardController {
 
     @Autowired

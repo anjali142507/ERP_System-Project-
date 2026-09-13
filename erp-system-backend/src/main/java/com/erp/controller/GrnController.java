@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
 @RequestMapping("/api/grns")
-@CrossOrigin(origins = "http://localhost:3000") // 👈 Iske bina React request block hogi
+
 public class GrnController {
     @Autowired
     private GrnService service;

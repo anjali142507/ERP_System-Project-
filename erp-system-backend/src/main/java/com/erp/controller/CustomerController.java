@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/customers")
-@CrossOrigin(origins = "http://localhost:3000") // Agar CORS issue aaye toh
+
 public class CustomerController {
 
     @Autowired
