@@ -11,7 +11,7 @@ import java.util.List;
 public class CustomerService {
 
     @Autowired
-    private CustomerRepository repo; // Aapka variable 'repo' hai
+    private CustomerRepository repo; 
 
     public Customer save(Customer c){
         return repo.save(c);
@@ -22,6 +22,6 @@ public class CustomerService {
     }
 
     public void delete(Long id) {
-        repo.deleteById(id); // 👈 Yahan 'repository' ki jagah 'repo' likhiye
+        repo.deleteById(id); 
     }
 }
