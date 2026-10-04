@@ -21,13 +21,13 @@ public class DashboardService {
         private ProductRepository productRepo;
 
         @Autowired
-        private CustomerRepository customerRepo; // 👈 Ye missing ho sakta hai
+        private CustomerRepository customerRepo; 
 
         @Autowired
-        private GrnRepository grnRepo;           // 👈 Ye missing ho sakta hai
+        private GrnRepository grnRepo;          
 
         @Autowired
-        private InvoiceRepository invoiceRepo;   // 👈 Ye missing ho sakta hai
+        private InvoiceRepository invoiceRepo;   
 
         @Autowired
         private SupplierRepository supplierRepo;
