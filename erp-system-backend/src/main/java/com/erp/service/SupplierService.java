@@ -11,7 +11,7 @@ import java.util.List;
 public class SupplierService {
 
     @Autowired
-    private SupplierRepository repo; // Check karlein aapne 'repo' hi naam rakha hai na?
+    private SupplierRepository repo; 
 
     public Supplier
     save(Supplier s) {
@@ -22,7 +22,6 @@ public class SupplierService {
         return repo.findAll();
     }
 
-    // 👇 Ye add kijiye
     public void delete(Long id) {
         repo.deleteById(id);
     }
